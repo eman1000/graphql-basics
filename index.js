@@ -14,7 +14,11 @@ const resolver = {person: ()=> {
         "firstName":"Eman",
         "lastName":"Musemwa",
         "gender":"Male",
-        "email":"emancodeinfo@gmail.com"
+        "emails":[{
+            "email":"emancodeinfo@gmail.com"
+        },{
+            "email":"test@gmail.com"
+        }]
     }
 }};
 

@@ -2,12 +2,15 @@ import { buildSchema } from "graphql";
 
 const schema = buildSchema(`
 
+    type Email {
+        email: String
+    }
     type Person {
         id: ID
-        firstName: String
+        firstName: String !
         lastName: String
         gender: String
-        email: String
+        emails: [Email]
     }
     type Query {
         person: Person
